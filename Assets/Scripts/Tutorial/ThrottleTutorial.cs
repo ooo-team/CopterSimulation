@@ -3,30 +3,26 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class KeyTutorial : Tutorial
+public class ThrottleTutorial : Tutorial
 {
-    public List<string> Keys = new List<string>();
-
     private bool isCurrentTutorial = false;
+
 
     public override void CheckIfHappening()
     {
+        
         isCurrentTutorial = true;
-
     }
 
-    private void OnNew(InputValue value)
+    private void OnThrottle(InputValue value)
     {
-        if (isCurrentTutorial)
+        if (!isCurrentTutorial)
             return;
-
-        
-        if (Keys.Count == 0)
+        if (value.Get<float>() < 0)
         {
             TutorialManager.Instance.CompletedTutorial();
             isCurrentTutorial = false;
         }
-
 
     }
 }
