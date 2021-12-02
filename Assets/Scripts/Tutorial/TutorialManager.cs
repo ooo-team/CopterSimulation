@@ -43,7 +43,7 @@ public class TutorialManager : MonoBehaviour
 
     public void CompletedTutorial()
     {
-        Debug.Log("Setting another tutorial");
+        // Debug.Log("Setting another tutorial");
         SetNextTutorial(currentTutorial.Order + 1);
     }
 

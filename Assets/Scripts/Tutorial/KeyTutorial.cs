@@ -1,26 +1,32 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class KeyTutorial : Tutorial
 {
     public List<string> Keys = new List<string>();
-    // Start is called before the first frame update
+
+    private bool isCurrentTutorial = false;
+
     public override void CheckIfHappening()
     {
-        foreach (string key in Keys)
-        {
-            if (Input.inputString.Contains(key))
-            {
-                Keys.Remove(key);
-                break;
-            }
-        }
+        isCurrentTutorial = true;
 
+    }
+
+    private void OnNew(InputValue value)
+    {
+        if (isCurrentTutorial)
+            return;
+
+        
         if (Keys.Count == 0)
         {
             TutorialManager.Instance.CompletedTutorial();
+            isCurrentTutorial = false;
         }
+
 
     }
 }
