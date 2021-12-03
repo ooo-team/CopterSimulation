@@ -9,32 +9,43 @@ namespace drone{
     {
         [SerializeField] private float minMaxPutch = 30f;
         [SerializeField] private float minMaxRoll = 30f;
-        [SerializeField] private float yawPower = 4f;
-        [SerializeField] private float pitchSpeed = 2f;
-        [SerializeField] private float rollSpeed = 2f;
-        [SerializeField] private float yawSpeed = 2f;
+        [SerializeField] private float yawPower = 0.1f;
+        [SerializeField] private float pitchSpeed = 0.2f;
+        [SerializeField] private float rollSpeed = 0.2f;
+        [SerializeField] private float yawSpeed = 1f;
         private float yaw = 0;
         private float finalPitch;
         private float finalRoll;
         private float finalYaw;
         private Drone_inputs input;
+
+        private float isLanded = 0;
         private List<Engine_interface> engines = new List<Engine_interface>();
+
+        private List<Propeller_rotate> propellers = new List<Propeller_rotate>();
         // Start is called before the first frame update
         void Start()
         {
             input = GetComponent<Drone_inputs>();
             engines = GetComponentsInChildren<Engine_interface>().ToList<Engine_interface>();
+            propellers = GetComponentsInChildren<Propeller_rotate>().ToList<Propeller_rotate>();
         }
 
         protected override void HandlePhysics()
         {
+            isLanded = Mathf.Lerp(isLanded, input.Power, Time.deltaTime);
+            foreach(Propeller_rotate propeller in propellers) {
+                propeller.isLanded = isLanded;
+            }
             HandleEngine();
-            HandleControl();
+            if (isLanded > 0.2f) {
+                HandleControl();
+            }
         }
 
         protected virtual void HandleEngine() {
             foreach(Engine_interface engine in engines) {
-                engine.UpdateEngine(rb, input);
+                engine.UpdateEngine(rb, input, isLanded);
             }
         }
 

@@ -31,6 +31,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "PowerEngines",
+                    "type": "Button",
+                    "id": "710296d5-52a5-4acf-a7d5-e95c5cc1f10c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -209,6 +218,17 @@
                     "action": "Throttle",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "a688dd30-150d-4524-b27d-75b7c6ecc666",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PowerEngines",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },
@@ -217,57 +237,46 @@
             "id": "55a69902-c9b6-47b7-893b-09a2e4d31e37",
             "actions": [
                 {
-                    "name": "New action",
-                    "type": "Button",
+                    "name": "Act",
+                    "type": "Value",
                     "id": "70796c99-3702-48e5-97d2-00815098ae55",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
                 {
-                    "name": "Mouse_button",
+                    "name": "MouseButton",
                     "id": "4b0ffc06-a404-45c3-a5b7-c43513c8f413",
-                    "path": "TwoModifiers",
+                    "path": "2DVector",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "New action",
+                    "action": "Act",
                     "isComposite": true,
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "modifier1",
+                    "name": "Up",
                     "id": "dc5d78c4-782f-4d1b-b10a-6ebf213a9e59",
                     "path": "<Mouse>/position/x",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "New action",
+                    "action": "Act",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "modifier2",
+                    "name": "right",
                     "id": "1da0f222-f4fb-4131-b427-7e0f357b2d48",
                     "path": "<Mouse>/position/y",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "New action",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "binding",
-                    "id": "0451069b-3b8c-488b-8c15-638275315c89",
-                    "path": "<Mouse>/press",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "New action",
+                    "action": "Act",
                     "isComposite": false,
                     "isPartOfComposite": true
                 }

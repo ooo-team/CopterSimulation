@@ -6,6 +6,6 @@ namespace drone{
     public interface Engine_interface
     {
         void InitEngine();
-        void UpdateEngine(Rigidbody rb, Drone_inputs input);
+        void UpdateEngine(Rigidbody rb, Drone_inputs input, float isLanded);
     }
 }
