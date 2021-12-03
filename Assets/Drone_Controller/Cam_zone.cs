@@ -14,7 +14,7 @@ public class Cam_zone : MonoBehaviour {
     void Update ()
     {
         transform.rotation = target.rotation;
-        transform.position = target.position + target.up * 0.2f;// + target.up - target.forward * 3;
+        transform.position = target.position + target.up - target.forward * 3;
         
     }
 }

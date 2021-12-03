@@ -15,7 +15,7 @@ public class TriggerTutorial : Tutorial
 
     public void OnTriggerEnter(Collider other)
     {
-        if (isCurrentTutorial)
+        if (!isCurrentTutorial)
             return;
 
         if (other.transform == HitTransform)
