@@ -426,8 +426,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7382165310769013515}
   - component: {fileID: 7382165310769013514}
-  - component: {fileID: 7382165310769013513}
-  - component: {fileID: 7382165310769013512}
   m_Layer: 0
   m_Name: TutorialManager
   m_TagString: Untagged
@@ -471,34 +469,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Tutorials: []
   explanationText: {fileID: 0}
---- !u!114 &7382165310769013513
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7382165310769013517}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4c044bdb7abaf878b22e3bee58e08b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Order: 0
-  Explanation: 
---- !u!114 &7382165310769013512
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7382165310769013517}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4c044bdb7abaf878b22e3bee58e08b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Order: 0
-  Explanation: 
 --- !u!1 &7382165311073343667
 GameObject:
   m_ObjectHideFlags: 0

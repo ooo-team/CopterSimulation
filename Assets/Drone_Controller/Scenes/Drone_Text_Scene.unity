@@ -2654,6 +2654,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2086724293743266081, guid: 94f89cbb2b4654859a2b8dca4fb7f6a5, type: 3}
+      propertyPath: m_text
+      value: 100%
+      objectReference: {fileID: 0}
     - target: {fileID: 2086724293743266087, guid: 94f89cbb2b4654859a2b8dca4fb7f6a5, type: 3}
       propertyPath: m_Name
       value: precentage_text
@@ -2940,6 +2944,10 @@ PrefabInstance:
     - target: {fileID: 229909811240496389, guid: 186be43094963b74388cc992c3670865, type: 3}
       propertyPath: m_Name
       value: tutorial_text
+      objectReference: {fileID: 0}
+    - target: {fileID: 229909811240496389, guid: 186be43094963b74388cc992c3670865, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 229909811240496391, guid: 186be43094963b74388cc992c3670865, type: 3}
       propertyPath: m_margin.w
@@ -4243,6 +4251,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7382165309609163879, guid: c76a69f4ab2370627984d7dce6a53a17, type: 3}
+      propertyPath: Explanation
+      value: "\u041D\u0430\u0436\u043C\u0438\u0442\u0435 q \u0437\u0430\u043F\u0443\u0441\u043A\u0430
+        \u0434\u0432\u0438\u0433\u0430\u0442\u0435\u043B\u0435\u0439"
+      objectReference: {fileID: 0}
     - target: {fileID: 7382165309722989064, guid: c76a69f4ab2370627984d7dce6a53a17, type: 3}
       propertyPath: m_Name
       value: '[5] get second point'
@@ -4253,7 +4266,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7382165309722989557, guid: c76a69f4ab2370627984d7dce6a53a17, type: 3}
       propertyPath: Explanation
-      value: "\u0432\u0442\u043E\u0440\u0430\u044F \u0441\u0444\u0435\u0440\u0430"
+      value: "\u041F\u043E\u0434\u043B\u0435\u0442\u0438\u0442\u0435 \u043A \u0432\u0442\u043E\u0440\u043E\u0439
+        \u0441\u0444\u0435\u0440\u0435"
       objectReference: {fileID: 0}
     - target: {fileID: 7382165309722989557, guid: c76a69f4ab2370627984d7dce6a53a17, type: 3}
       propertyPath: HitTransform
@@ -4273,7 +4287,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7382165309736947950, guid: c76a69f4ab2370627984d7dce6a53a17, type: 3}
       propertyPath: Explanation
-      value: "\u043F\u0435\u0440\u0432\u0430\u044F \u0441\u0444\u0435\u0440\u0430"
+      value: "\u041F\u043E\u0434\u043B\u0435\u0442\u0438\u0442\u0435 \u043A \u043F\u0435\u0440\u0432\u043E\u0439
+        \u0441\u0444\u0435\u0440\u0435"
       objectReference: {fileID: 0}
     - target: {fileID: 7382165309736947950, guid: c76a69f4ab2370627984d7dce6a53a17, type: 3}
       propertyPath: HitTransform
@@ -4289,7 +4304,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7382165310512588540, guid: c76a69f4ab2370627984d7dce6a53a17, type: 3}
       propertyPath: Explanation
-      value: "\u0442\u0440\u0435\u0442\u044C\u044F \u0441\u0444\u0435\u0440\u0430"
+      value: "\u041F\u043E\u0434\u043B\u0435\u0442\u0438\u0442\u0435 \u043A \u0442\u0440\u0435\u0442\u044C\u0435\u0439
+        \u0441\u0444\u0435\u0440\u0435"
       objectReference: {fileID: 0}
     - target: {fileID: 7382165310512588540, guid: c76a69f4ab2370627984d7dce6a53a17, type: 3}
       propertyPath: HitTransform
@@ -4350,6 +4366,24 @@ PrefabInstance:
     - target: {fileID: 7382165310769013517, guid: c76a69f4ab2370627984d7dce6a53a17, type: 3}
       propertyPath: m_Name
       value: TutorialManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 7382165311073343678, guid: c76a69f4ab2370627984d7dce6a53a17, type: 3}
+      propertyPath: Explanation
+      value: "\u041D\u0430\u0436\u043C\u0438\u0442\u0435 \u0441\u0442\u0440\u0435\u043B\u043A\u0443
+        \u0432\u0432\u0435\u0440\u0445 \u0434\u043B\u044F \u043F\u043E\u0434\u044A\u0435\u043C\u0430
+        \u0432\u0432\u0435\u0440\u0445"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7382165311134321381, guid: c76a69f4ab2370627984d7dce6a53a17, type: 3}
+      propertyPath: Explanation
+      value: "\u0421\u0442\u0440\u0435\u043B\u043A\u0438 \u0432\u043F\u0440\u0430\u0432\u043E/\u0432\u043F\u0440\u0430\u0432\u043E
+        \u0434\u043B\u044F \u043F\u043E\u0432\u043E\u0440\u043E\u0442\u0430 \"\u0440\u044B\u0441\u043A\u0430\u043D\u0438\u044F\""
+      objectReference: {fileID: 0}
+    - target: {fileID: 7382165311290138841, guid: c76a69f4ab2370627984d7dce6a53a17, type: 3}
+      propertyPath: Explanation
+      value: "\u041F\u0435\u0440\u0435\u0434\u0432\u0438\u0436\u0435\u043D\u0438\u0435
+        \u0432 \u0433\u043E\u0440\u0438\u0437\u043E\u043D\u0442\u0430\u043B\u044C\u043D\u043E\u0439
+        \u043F\u043B\u043E\u0441\u043A\u043E\u0441\u0442\u0438 \u043D\u0430 \u043A\u043B\u0430\u0432\u0438\u0448\u0438
+        WASD"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c76a69f4ab2370627984d7dce6a53a17, type: 3}
