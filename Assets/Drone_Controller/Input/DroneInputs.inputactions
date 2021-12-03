@@ -244,6 +244,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "PowerEngines",
+                    "type": "Button",
+                    "id": "abef7b53-757e-441b-ad3a-b7a187742b21",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -279,6 +288,17 @@
                     "action": "Act",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "bbd272ce-4c1a-41fb-88cc-2482766e9761",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PowerEngines",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }
