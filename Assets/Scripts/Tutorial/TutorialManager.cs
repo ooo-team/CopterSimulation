@@ -2,12 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class TutorialManager : MonoBehaviour
 {
     public List<Tutorial> Tutorials = new List<Tutorial>();
 
-    public Text explanationText;
+    public TextMeshProUGUI explanationText;
 
     private static TutorialManager instance;
     public static TutorialManager Instance
