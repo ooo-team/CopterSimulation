@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Propeller_rotate : MonoBehaviour
 {
-    private float propSpeed = 5f;
+    private float propSpeed = 15f;
     public float isLanded = 0;
     // Start is called before the first frame update
     void Start()

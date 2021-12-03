@@ -18,7 +18,7 @@ namespace drone{
         public void UpdateEngine(Rigidbody rb, Drone_inputs input, float isLanded)
         {
             Vector3 engine_force = Vector3.zero;
-            engine_force = transform.up * (rb.mass * Physics.gravity.magnitude - input.Throttle * maxPower)/4 * isLanded;
+            engine_force = transform.up * (rb.mass * Physics.gravity.magnitude - input.Throttle * maxPower)/6 * isLanded;
             rb.AddForce(engine_force, ForceMode.Force);
         }
     }

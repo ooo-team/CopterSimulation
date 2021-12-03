@@ -24,7 +24,7 @@ public class Cam_zone : MonoBehaviour
         if (power == 1)
         {
             transform.rotation = target.rotation;
-            transform.position = target.position + target.up * 0.2f;// + target.up - target.forward * 3;
+            transform.position = target.position + target.up * 0.2f + target.forward;// + target.up - target.forward * 3;
         }
         else
         {

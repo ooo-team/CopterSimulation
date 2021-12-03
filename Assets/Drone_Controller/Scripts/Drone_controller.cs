@@ -9,16 +9,16 @@ namespace drone
     public class Drone_controller : Base_Rigidbody
     {
         [SerializeField] private float minMaxPutch = 30f;
-        [SerializeField] private float minMaxRoll = 30f;
+        [SerializeField] private float minMaxRoll = 40f;
         [SerializeField] private float yawPower = 0.1f;
         [SerializeField] private float pitchSpeed = 0.2f;
         [SerializeField] private float rollSpeed = 0.2f;
         [SerializeField] private float yawSpeed = 1f;
-        private float yaw = 0
+        private float yaw = 180
         ;
         private float finalPitch;
         private float finalRoll;
-        private float finalYaw;
+        private float finalYaw = 180;
         private Drone_inputs input;
 
         private float isLanded = 0;
