@@ -14,7 +14,8 @@ namespace drone
         [SerializeField] private float pitchSpeed = 0.2f;
         [SerializeField] private float rollSpeed = 0.2f;
         [SerializeField] private float yawSpeed = 1f;
-        private float yaw = 0;
+        private float yaw = 0
+        ;
         private float finalPitch;
         private float finalRoll;
         private float finalYaw;

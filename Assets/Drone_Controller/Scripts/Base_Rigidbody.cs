@@ -6,8 +6,7 @@ namespace drone{
     [RequireComponent(typeof(Rigidbody))]
     public class Base_Rigidbody : MonoBehaviour
     {
-        [SerializeField] private float weigth = 1f;
-        const float toKG = 0.454f;
+        [SerializeField] private float weigth = 6.5f;
         protected Rigidbody rb;
         protected float startDrag;
         protected float startAngelar;
@@ -17,7 +16,7 @@ namespace drone{
         {
             rb = GetComponent<Rigidbody>();
             if (rb) {
-                rb.mass = weigth * toKG;
+                rb.mass = weigth;
                 startDrag = rb.drag;
                 startAngelar = rb.angularDrag;
             }
