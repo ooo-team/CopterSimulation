@@ -22,6 +22,10 @@ public class HealthBarHandler : MonoBehaviour
     void decreaseTime()
     {
         current_size -= 1;
+        if (current_size == 0)
+        {
+            //exit here
+        }
         knobComponent.fillAmount = current_size / decay_time;
     }
 }
