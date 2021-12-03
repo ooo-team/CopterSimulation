@@ -61,7 +61,7 @@ public class TutorialManager : MonoBehaviour
 
     public void CompletedAllTutorials()
     {
-        explanationText.text = "Tutorial finished";
+        explanationText.text = "Поздравляем, вы успешно окончили ускоренный курс обучения";
         //loadNextScene()
     }
 

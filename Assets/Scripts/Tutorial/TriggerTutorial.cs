@@ -12,7 +12,7 @@ public class TriggerTutorial : Tutorial
     public override void CheckIfHappening()
     {
         if(!isCurrentTutorial){
-            Debug.Log("Showing mesh renderer");
+            // Debug.Log("Showing mesh renderer");
             MeshRenderer rend = GetComponent<MeshRenderer>();
             rend.enabled = true;
         }
