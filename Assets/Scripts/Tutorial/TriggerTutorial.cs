@@ -8,9 +8,16 @@ public class TriggerTutorial : Tutorial
 
     public Transform HitTransform;
 
+
     public override void CheckIfHappening()
     {
+        if(!isCurrentTutorial){
+            Debug.Log("Showing mesh renderer");
+            MeshRenderer rend = GetComponent<MeshRenderer>();
+            rend.enabled = true;
+        }
         isCurrentTutorial = true;
+        
     }
 
     public void OnTriggerEnter(Collider other)
@@ -20,6 +27,9 @@ public class TriggerTutorial : Tutorial
 
         if (other.transform == HitTransform)
         {
+            Debug.Log("Hiding mesh renderer");
+            MeshRenderer rend = GetComponent<MeshRenderer>();
+            rend.enabled = false;
             TutorialManager.Instance.CompletedTutorial();
             isCurrentTutorial = false;
         }
