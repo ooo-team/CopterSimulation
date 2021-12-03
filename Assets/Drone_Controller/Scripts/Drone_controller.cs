@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 
-namespace drone{
+namespace drone
+{
     [RequireComponent(typeof(Drone_inputs))]
     public class Drone_controller : Base_Rigidbody
     {
@@ -23,6 +24,12 @@ namespace drone{
         private List<Engine_interface> engines = new List<Engine_interface>();
 
         private List<Propeller_rotate> propellers = new List<Propeller_rotate>();
+
+        private bool hasPower = true;
+
+        public float IsLanded { get => isLanded; set => isLanded = value; }
+        public bool HasPower { get => hasPower; set => hasPower = value; }
+
         // Start is called before the first frame update
         void Start()
         {
@@ -33,23 +40,32 @@ namespace drone{
 
         protected override void HandlePhysics()
         {
-            isLanded = Mathf.Lerp(isLanded, input.Power, Time.deltaTime);
-            foreach(Propeller_rotate propeller in propellers) {
-                propeller.isLanded = isLanded;
+            if (hasPower)
+            {
+                IsLanded = Mathf.Lerp(IsLanded, input.Power, Time.deltaTime);
+                foreach (Propeller_rotate propeller in propellers)
+                {
+                    propeller.isLanded = IsLanded;
+                }
+                HandleEngine();
+                if (IsLanded > 0.2f)
+                {
+                    HandleControl();
+                }
             }
-            HandleEngine();
-            if (isLanded > 0.2f) {
-                HandleControl();
+            
+        }
+
+        protected virtual void HandleEngine()
+        {
+            foreach (Engine_interface engine in engines)
+            {
+                engine.UpdateEngine(rb, input, IsLanded);
             }
         }
 
-        protected virtual void HandleEngine() {
-            foreach(Engine_interface engine in engines) {
-                engine.UpdateEngine(rb, input, isLanded);
-            }
-        }
-
-        protected virtual void HandleControl() {
+        protected virtual void HandleControl()
+        {
             float pitch = input.Cyclic.y * minMaxPutch;
             float roll = -input.Cyclic.x * minMaxRoll;
             yaw += input.Padals * yawPower;
