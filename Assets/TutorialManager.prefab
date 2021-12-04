@@ -753,7 +753,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4932154313291396683}
   - component: {fileID: 4932154313291396682}
-  - component: {fileID: 4932154313291396677}
   m_Layer: 0
   m_Name: TutorialManager
   m_TagString: Untagged
@@ -799,21 +798,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Tutorials: []
   explanationText: {fileID: 0}
---- !u!114 &4932154313291396677
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4932154313291396676}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f03875ad662bad91968c30e81346652, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Order: 0
-  Explanation: 
-  outline: {fileID: 0}
 --- !u!1 &4932154313430951145
 GameObject:
   m_ObjectHideFlags: 0
