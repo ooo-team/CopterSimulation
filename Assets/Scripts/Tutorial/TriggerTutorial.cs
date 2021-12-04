@@ -11,13 +11,17 @@ public class TriggerTutorial : Tutorial
 
     public override void CheckIfHappening()
     {
-        if(!isCurrentTutorial){
+        if (!isCurrentTutorial)
+        {
             // Debug.Log("Showing mesh renderer");
             MeshRenderer rend = GetComponent<MeshRenderer>();
-            rend.enabled = true;
+            if (rend)
+            {
+                rend.enabled = true;
+            }
         }
         isCurrentTutorial = true;
-        
+
     }
 
     public void OnTriggerEnter(Collider other)
@@ -29,7 +33,10 @@ public class TriggerTutorial : Tutorial
         {
             Debug.Log("Hiding mesh renderer");
             MeshRenderer rend = GetComponent<MeshRenderer>();
-            rend.enabled = false;
+            if (rend)
+            {
+                rend.enabled = false;
+            }
             TutorialManager.Instance.CompletedTutorial();
             isCurrentTutorial = false;
         }
