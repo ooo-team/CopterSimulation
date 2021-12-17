@@ -318,6 +318,17 @@
                 },
                 {
                     "name": "",
+                    "id": "6c574195-32c1-4d3f-92bc-17294ee57eec",
+                    "path": "<XRController>{RightHand}/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PowerEngines",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "4d587a47-2b45-4377-87de-9b96c63ccf31",
                     "path": "<Keyboard>/enter",
                     "interactions": "",
@@ -335,6 +346,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "SkippingTutorial",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "baf1499b-d6d7-4995-9d7d-516de146a364",
+                    "path": "<XRController>{RightHand}/{primary2DAxis}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Cyclic",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
