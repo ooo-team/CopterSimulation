@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Drone_Controller/Scenes/Drone_Text_Scene.unity
     guid: 89ba3ab212137164bad007c5fcb063e8
-  m_configObjects: {}
+  m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 265a3a136df561d40a148e82f95e420b, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 37d25d67199ca404ca66774b424b06db, type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 8ee92192a94cae0439c05ae157767623, type: 2}
