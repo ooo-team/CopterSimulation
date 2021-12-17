@@ -163,6 +163,39 @@
                     "isPartOfComposite": true
                 },
                 {
+                    "name": "2D Vector",
+                    "id": "8aa1e6bf-f1f9-461c-b7b7-aead059e7592",
+                    "path": "2DVector(mode=2)",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Cyclic",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "right",
+                    "id": "29be7217-7457-403a-8658-93c6cf179ad5",
+                    "path": "<OculusTouchController>{LeftHand}/thumbstick/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Cyclic",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "up",
+                    "id": "c6c53e03-e240-4fe0-96a3-9a40f29f7796",
+                    "path": "<OculusTouchController>{LeftHand}/thumbstick/y",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Cyclic",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
                     "name": "Arrows",
                     "id": "c2c19419-26b9-4447-b766-612e49368ba7",
                     "path": "1DAxis",
@@ -196,6 +229,17 @@
                     "isPartOfComposite": true
                 },
                 {
+                    "name": "",
+                    "id": "01982945-aa75-4a1a-9cf9-0932a6ae75e2",
+                    "path": "<OculusTouchController>{RightHand}/thumbstick/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pedals",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
                     "name": "Joystick",
                     "id": "a590986e-ac38-4302-b5ad-99cc6eecd3ae",
                     "path": "1DAxis",
@@ -227,6 +271,17 @@
                     "action": "Pedals",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "f974698a-ab9f-4ff6-bc9f-4c5c9342a5d2",
+                    "path": "<OculusTouchController>{RightHand}/thumbstick/y",
+                    "interactions": "",
+                    "processors": "Invert",
+                    "groups": "",
+                    "action": "Throttle",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 },
                 {
                     "name": "Arrows",
@@ -348,17 +403,6 @@
                     "action": "SkippingTutorial",
                     "isComposite": false,
                     "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "baf1499b-d6d7-4995-9d7d-516de146a364",
-                    "path": "<XRController>{RightHand}/{primary2DAxis}",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Cyclic",
-                    "isComposite": false,
-                    "isPartOfComposite": false
                 }
             ]
         },
@@ -434,6 +478,17 @@
                     "name": "",
                     "id": "13017809-e58b-4e41-9d08-2e52f3519282",
                     "path": "<XInputController>/buttonWest",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PowerEngines",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "aa74a169-96b9-472e-931a-07268d90a4b5",
+                    "path": "<XRController>{RightHand}/{secondaryButton}",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
